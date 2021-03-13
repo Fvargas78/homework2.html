@@ -73,3 +73,36 @@ h4, h5 {
     0% { color: black; }
     50% { color: black; }
     100% { color: white; }
+}
+    
+    
+.banner {
+  width: 100px;
+  height: 35px;
+  background-color: red;
+  position: relative;
+  animation-name: banner-animation;
+  animation-duration: 6s linear infinite;
+  animation-iteration-count: infinite;
+  color: white;
+}
+    
+@keyframes banner-animation {
+  0%   {background-color:red; left:0px;}
+  25%  {background-color:orange; left:90%;}
+  50%  {background-color:blue; left:90%;}
+  75%  {background-color:green; left:0px;}
+  100% {background-color:red; left:0px;}
+}
+    
+     
+@-webkit-keyframes banner-animation {
+  0%   {left:0px;}
+  100% {left:200px;}
+}
+    
+     
+@-moz-keyframes banner-animation {
+  0%   {left:0px;}
+  100% {left:200px;}
+}
