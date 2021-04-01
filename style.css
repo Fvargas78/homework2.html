@@ -1,37 +1,35 @@
-banner {
-  width: 100px;
-  height: 35px;
-  background-color: red;
+     
+.banner {
+  width: 15%;
+  padding: 30 px 0;
+  height: 30px;
   position: relative;
-  animation-name: banner-animation;
-  animation-duration: 6s linear infinite;
-  animation-iteration-count: infinite;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  animation: myfirst 10s infinite;
+  animation-direction: alternate;
   color: white;
 }
-    
-@keyframes banner-animation {
-  0%   {background-color:red; left:0px;}
-  25%  {background-color:orange; left:90%;}
-  50%  {background-color:blue; left:90%;}
-  75%  {background-color:green; left:0px;}
-  100% {background-color:red; left:0px;}
-}
-    
-     
-@-webkit-keyframes banner-animation {
-  0%   {left:0px;}
-  100% {left:200px;}
-}
-    
-     
-@-moz-keyframes banner-animation {
-  0%   {left:0px;}
-  100% {left:200px;}
-}
-    
+ @keyframes myfirst {
+        0% {
+            background: red;
+            left: 0px;
+            top: 0px;
+        }
 
-/* The animation code */
+
+        100% {
+            background: red;
+            left: 73%;
+            top: 0px;
+        }
+    }
+
+    
 @keyframes tablechange {
 from {background-color: cyan; color: default;}
 to {background-color: green; color: white;}
 }
+
